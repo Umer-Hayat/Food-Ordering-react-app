@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+// Customizing Navbar
+.navbar {
+  padding: 10px;
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    padding: 0;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: rgb(255, 255, 255);
+        padding-right: 1.5rem;
+      }
+      .nav-link:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+// Carousel Custimization
+.carousel-inner {
+  img {
+    width: 100%;
+    height: 500px;
+  }
+}
+// Payment section styles
+#payment {
+  display: none;
+}

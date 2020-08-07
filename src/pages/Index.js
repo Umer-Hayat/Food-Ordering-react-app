@@ -29,6 +29,60 @@ class Index extends Component {
                                 </ul>
                             </div>
                         </div>
+                        <li className="dropdown">
+                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notification (<b>2</b>)</a>
+                            <ul className="dropdown-menu notify-drop">
+                                <div className="notify-drop-title">
+                                    <div className="row">
+                                        <div className="col-md-6 col-sm-6 col-xs-6">Bildirimler (<b>2</b>)</div>
+                                        <div className="col-md-6 col-sm-6 col-xs-6 text-right"><a href className="rIcon allRead" data-tooltip="tooltip" data-placement="bottom" title="tümü okundu."><i className="fa fa-dot-circle-o" /></a></div>
+                                    </div>
+                                </div>
+                                {/* end notify title */}
+                                {/* notify content */}
+                                <div className="drop-content">
+                                    <li>
+                                        <div className="col-md-3 col-sm-3 col-xs-3"><div className="notify-img"><img src="http://placehold.it/45x45" alt /></div></div>
+                                        <div className="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href>Ahmet</a> yorumladı. <a href>Çicek bahçeleri...</a> <a href className="rIcon"><i className="fa fa-dot-circle-o" /></a>
+                                            <hr />
+                                            <p className="time">Şimdi</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="col-md-3 col-sm-3 col-xs-3"><div className="notify-img"><img src="http://placehold.it/45x45" alt /></div></div>
+                                        <div className="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href>Ahmet</a> yorumladı. <a href>Çicek bahçeleri...</a> <a href className="rIcon"><i className="fa fa-dot-circle-o" /></a>
+                                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                                            <p className="time">1 Saat önce</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="col-md-3 col-sm-3 col-xs-3"><div className="notify-img"><img src="http://placehold.it/45x45" alt /></div></div>
+                                        <div className="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href>Ahmet</a> yorumladı. <a href>Çicek bahçeleri...</a> <a href className="rIcon"><i className="fa fa-dot-circle-o" /></a>
+                                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                                            <p className="time">29 Dakika önce</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="col-md-3 col-sm-3 col-xs-3"><div className="notify-img"><img src="http://placehold.it/45x45" alt /></div></div>
+                                        <div className="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href>Ahmet</a> yorumladı. <a href>Çicek bahçeleri...</a> <a href className="rIcon"><i className="fa fa-dot-circle-o" /></a>
+                                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                                            <p className="time">Dün 13:18</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="col-md-3 col-sm-3 col-xs-3"><div className="notify-img"><img src="http://placehold.it/45x45" alt /></div></div>
+                                        <div className="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href>Ahmet</a> yorumladı. <a href>Çicek bahçeleri...</a> <a href className="rIcon"><i className="fa fa-dot-circle-o" /></a>
+                                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                                            <p className="time">2 Hafta önce</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div className="notify-drop-footer text-center">
+                                    <a href><i className="fa fa-eye" /> Tümünü Göster</a>
+                                </div>
+                            </ul>
+                        </li>
+
                     </nav>
                     {/* Navbar Ends */}
                     {/* Carousel Starts */}

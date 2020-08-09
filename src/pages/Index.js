@@ -178,58 +178,46 @@ class Index extends Component {
                     <section className="container content-section" id="view-cart">
                         <h3 className="my-4 text-center">View Cart</h3>
                         <div className="cart-row">
-                            <span className="cart-item cart-header cart-column">ITEM</span>
-                            <span className="cart-price cart-header cart-column">PRICE</span>
-                            <span className="cart-quantity cart-header cart-column">QUANTITY</span>
+                            <table className="table table-striped">
+                                <tbody><tr>
+                                    <th>ITEM</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                </tr>
+                                    <tr>
+                                        <td>
+                                            <img className="cart-item-image" src="assets/img/1.jpg" width={100} height={100} />
+                                            <span className="cart-item-title">Item 1 Title</span>
+                                        </td>
+                                        <td><span className="cart-price">$2</span></td>
+                                        <td>
+                                            <input className="cart-quantity-input" type="number" defaultValue={1} />
+                                            <button className="btn btn-danger" type="button">REMOVE</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img className="cart-item-image" src="assets/img/2.jpg" width={100} height={100} />
+                                            <span className="cart-item-title">Item 2 Title</span>
+                                        </td>
+                                        <td><span className="cart-price">$4</span></td>
+                                        <td>
+                                            <input className="cart-quantity-input" type="number" defaultValue={1} />
+                                            <button className="btn btn-danger" type="button">REMOVE</button>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
                         </div>
                         <div className="cart-items" />
                         <div className="cart-total">
                             <strong className="cart-total-title">Total</strong>
-                            <span className="cart-total-price">$0</span>
+                            <span className="cart-total-price">$6</span>
                         </div>
                         <button className="btn btn-primary btn-purchase" type="button">
                             Checkout
     </button>
                     </section>
                     {/* View cart ends */}
-                    {/* My Account Starts */}
-                    <section className="container" id="my-account">
-                        {/* My Account Ends */}
-                        <div className="row">
-                            <div className="col-md-12">
-                                <h3 className="my-4 text-center">My Orders</h3>
-                                <div className="table-resposive">
-                                    <table className="table table-striped">
-                                        <tbody><tr>
-                                            <th>Or. No</th>
-                                            <th>Due Amount</th>
-                                            <th>Quantity</th>
-                                            <th>Order Status</th>
-                                        </tr>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>$20.00</td>
-                                                <td>2</td>
-                                                <td className="text-success">Success</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2.</td>
-                                                <td>$8.00</td>
-                                                <td>1</td>
-                                                <td className="text-primary">Processing</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3.</td>
-                                                <td>$24.00</td>
-                                                <td>2</td>
-                                                <td className="text-danger">Cancelled</td>
-                                            </tr>
-                                        </tbody></table>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    {/* My Account Ends */}
                     {/* Checkout Us Starts */}
                     <section className="container" id="payment">
                         <div className="row">
@@ -241,25 +229,91 @@ class Index extends Component {
                                         <input type="text" className="form-control" name="name" required placeholder="Name*" data-form-field="Name" />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="card-no">Card Number</label>
-                                        <input type="email" className="form-control" name="number" required placeholder="Card Number*" data-form-field="Card no" />
+                                        <label htmlFor="card-no">Address</label>
+                                        <input type="text" className="form-control" name="address" required placeholder="Adress*" data-form-field="Card no" />
                                     </div>
                                     <div className="row">
-                                        <div className="form-group col-md-6">
-                                            <label htmlFor="Expiration">Expiry Date</label>
-                                            <input type="text" className="form-control" name="expire" placeholder="Expire date mm/yy" data-form-field="Expire" />
-                                        </div>
-                                        <div className="form-group col-md-6">
-                                            <label htmlFor="cvv">CVV</label>
-                                            <input type="number" className="form-control" name="cvv" placeholder="CVV three digit code" data-form-field="CVV" />
+                                        <div className="form-group col-md-12">
+                                            <label htmlFor="Expiration">Contact No</label>
+                                            <input type="number" className="form-control" name="number" placeholder="Contact No" data-form-field="Expire" />
                                         </div>
                                     </div>
-                                    <div className="text-right">
-                                        <button type="button" className="btn btn-lg btn-primary" onclick="alert('Order has been placed successfully...')">
-                                            Confirm Payment
-            </button>
-                                    </div>
-                                </form>
+                                    <article className="card">
+                                        <div className="card-body p-5">
+                                            <ul className="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+                                                <li className="nav-item">
+                                                    <a className="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                                                        <i className="fa fa-credit-card" /> Master Card</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" data-toggle="pill" href="#nav-tab-card">
+                                                        <i className="fa fa-credit-card" /> Visa Card</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" data-toggle="pill" href="#nav-tab-card">
+                                                        <i className="fa fa-credit-card" /> American Express</a>
+                                                </li>
+                                            </ul>
+                                            <div className="tab-content">
+                                                <div className="tab-pane fade show active" id="nav-tab-card">
+                                                    <p className="alert alert-success">
+                                                        Some text success or error
+                  </p>
+                                                    {/* form-group.// */}
+                                                    <div className="form-group">
+                                                        <label htmlFor="cardNumber">Card number</label>
+                                                        <div className="input-group">
+                                                            <input type="text" className="form-control" name="cardNumber" placeholder />
+                                                            <div className="input-group-append">
+                                                                <span className="input-group-text text-muted">
+                                                                    <i className="fa fa-cc-visa" />
+                                                                    <i className="fa fa-cc-amex" />
+                                                                    <i className="fa fa-cc-mastercard" />
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* form-group.// */}
+                                                    <div className="row">
+                                                        <div className="col-sm-8">
+                                                            <div className="form-group">
+                                                                <label><span className="hidden-xs">Expiration</span>
+                                                                </label>
+                                                                <div className="input-group">
+                                                                    <input type="number" className="form-control" placeholder="MM" name />
+                                                                    <input type="number" className="form-control" placeholder="YY" name />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-4">
+                                                            <div className="form-group">
+                                                                <label data-toggle="tooltip" title data-original-title="3 digits code on back side of the card">CVV <i className="fa fa-question-circle" /></label>
+                                                                <input type="number" className="form-control" required />
+                                                            </div>
+                                                            {/* form-group.// */}
+                                                        </div>
+                                                    </div>
+                                                    {/* row.// */}
+                                                    <button className="subscribe btn btn-primary btn-block" type="button">
+                                                        Confirm
+                  </button>
+                                                </div>
+                                                {/* tab-pane.// */}
+                                            </div>
+                                            {/* tab-content .// */}
+                                        </div>
+                                        {/* card-body.// */}
+                                    </article></form>
+                                {/* <div class="text-right">
+        <button
+          type="button"
+          class="btn btn-lg btn-primary"
+          onclick="alert('Order has been placed successfully...')"
+        >
+          Confirm Payment
+        </button>
+      </div> */}
+                                {/* card.// */}
                             </div>
                         </div>
                     </section>
@@ -270,6 +324,24 @@ class Index extends Component {
                             <p>© Copyright All right reserved example.com 2020</p>
                         </div>
                     </footer>
+                    {/* Footer Ends */}
+                    {/* Notification start */}
+                    <section className="notifi">
+                        <div className="noti-box" id="noti-box">
+                            <div className="row">
+                                <div className="col-xs-6">
+                                    <h5>Order No#</h5>
+                                    <h5>Order Status#</h5>
+                                </div>
+                                <div className="col-xs-6">
+                                    <p>121221243</p>
+                                    <p>processing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i className="fa fa-bell" id="bell"><span className="badge badge-info">2</span>
+                        </i>
+                    </section>
                 </div>
 
             </div>

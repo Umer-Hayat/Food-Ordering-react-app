@@ -33,3 +33,34 @@ html {
 #payment {
   display: none;
 }
+
+.notifi {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  .row {
+    margin: 0;
+  }
+  .noti-box {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 10px #c2c2c2;
+    box-shadow: 0 0 10px #c2c2c2;
+    border-radius: 10px;
+    h5,
+    p {
+      margin: 10px;
+    }
+  }
+  i {
+    color: rgb(101, 124, 250);
+    font-size: 40px;
+    float: right;
+    .badge {
+      position: absolute;
+      font-size: 15px;
+      bottom: 25px;
+    }
+  }
+}

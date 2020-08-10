@@ -43,15 +43,15 @@ class AdminIndex extends Component {
                                     <ul className="navbar-nav mr-auto mt-md-0">
                                         {/* This is  */}
                                         <li className="nav-item">
-                                            <a className="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i className="fa fa-bars" /></a>
+                                            <a className="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="#"><i className="fa fa-bars" /></a>
                                         </li>
                                         <li className="nav-item m-l-10">
-                                            <a className="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i className="fa fa-bars" /></a>
+                                            <a className="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="#"><i className="fa fa-bars" /></a>
                                         </li>
                                     </ul>
                                     <ul className="navbar-nav my-lg-0">
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
+                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
                                             <div className="dropdown-menu dropdown-menu-right scale-up">
                                                 <ul className="dropdown-user">
                                                     <li role="separator" className="divider" />

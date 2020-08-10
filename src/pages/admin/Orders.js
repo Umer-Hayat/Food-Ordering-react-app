@@ -25,15 +25,15 @@ class Orders extends Component {
                                     <ul className="navbar-nav mr-auto mt-md-0">
                                         {/* This is  */}
                                         <li className="nav-item">
-                                            <a className="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i className="fa fa-bars" /></a>
+                                            <a className="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="#"><i className="fa fa-bars" /></a>
                                         </li>
                                         <li className="nav-item m-l-10">
-                                            <a className="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i className="fa fa-bars" /></a>
+                                            <a className="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="#"><i className="fa fa-bars" /></a>
                                         </li>
                                     </ul>
                                     <ul className="navbar-nav my-lg-0">
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
+                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
                                             <div className="dropdown-menu dropdown-menu-right scale-up">
                                                 <ul className="dropdown-user">
                                                     <li role="separator" className="divider" />
@@ -83,9 +83,7 @@ class Orders extends Component {
                                                                 {/* Modal Header */}
                                                                 <div className="modal-header">
                                                                     <h4 className="modal-title ml-auto">Edit Order</h4>
-                                                                    <button type="button" className="close" data-dismiss="modal">
-                                                                        ×
-                          </button>
+                                                                    <button type="button" className="close" data-dismiss="modal">×</button>
                                                                 </div>
                                                                 {/* Modal body */}
                                                                 <div className="modal-body">
@@ -100,7 +98,7 @@ class Orders extends Component {
                                                                         <input type="number" placeholder="Quantity" className="form-control" />
                                                                     </div>
                                                                     <div className="form-group">
-                                                                        <select className="form-control" name id>
+                                                                        <select className="form-control">
                                                                             <option value>Change Order Status</option>
                                                                             <option value>Completed</option>
                                                                             <option value>Processing</option>
@@ -130,6 +128,42 @@ class Orders extends Component {
                                                                 <td>
                                                                     <div className="label label-table label-success">
                                                                         Completed
+                          </div>
+                                                                </td>
+                                                                <td className="text-nowrap">
+                                                                    <a href="#" data-original-title="Edit" data-toggle="modal" data-target="#editOrder">
+                                                                        <i className="fa fa-pencil text-inverse m-r-10" />
+                                                                    </a>
+                                                                    <a href="#" data-toggle="tooltip" data-original-title="Close">
+                                                                        <i className="fa fa-close text-danger" />
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>$20.00</td>
+                                                                <td>4</td>
+                                                                <td>
+                                                                    <div className="label label-table label-warning">
+                                                                        Order Placed
+                          </div>
+                                                                </td>
+                                                                <td className="text-nowrap">
+                                                                    <a href="#" data-original-title="Edit" data-toggle="modal" data-target="#editOrder">
+                                                                        <i className="fa fa-pencil text-inverse m-r-10" />
+                                                                    </a>
+                                                                    <a href="#" data-toggle="tooltip" data-original-title="Close">
+                                                                        <i className="fa fa-close text-danger" />
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>$15.00</td>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <div className="label label-table label-primary">
+                                                                        Delieved
                           </div>
                                                                 </td>
                                                                 <td className="text-nowrap">

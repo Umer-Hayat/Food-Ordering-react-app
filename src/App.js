@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Index from './pages/Index';
 import AdminIndex from './pages/admin/AdminIndex'
 import Orders from './pages/admin/Orders'
@@ -20,6 +19,7 @@ function App() {
           <Index />
         </Route>
         <Route path="/admin/">
+
           <AdminIndex />
         </Route>
         <Route path="/orders/">

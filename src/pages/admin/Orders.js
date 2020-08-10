@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 class Orders extends Component {
+
+    componentDidMount() {
+
+        var script = document.createElement('script')
+        script.src = '../../../assets/admin/assets/js/custom.min.js'
+        script.class = "external-script"
+        document.body.appendChild(script);
+    }
+
+
     render() {
         return (
             <div>

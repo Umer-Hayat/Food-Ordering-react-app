@@ -1,34 +1,36 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import useScript from '../../useScript';
 
+// const MyComponent = props => {
+//     useScript('%PUBLIC_URL%/assets/admin/assets/js/dashboard1.js');
+//     // rest of your component
+// }
 
 // import { appendScript } from '../../appendScript';
 
 class AdminIndex extends Component {
 
-    // componentDidMount() {
-    //     appendScript("../public/assets/admin/assets/plugins/jquery/jquery.min.js");
-    //     appendScript("../public/assets/admin/assets/plugins/bootstrap/js/popper.min.js");
-    //     appendScript("../public/assets/admin/assets/plugins/bootstrap/js/bootstrap.min.js");
-    //     appendScript("../public/assets/admin/assets/js/waves.js");
-    //     appendScript("../public/assets/admin/assets/js/sidebarmenu.js");
-    //     appendScript("../public/assets/admin/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js");
-    //     appendScript("../public/assets/admin/assets/js/custom.min.js");
-    //     appendScript("../public/assets/admin/assets/plugins/sparkline/jquery.sparkline.min.js");
-    //     appendScript("../public/assets/admin/assets/plugins/raphael/raphael-min.js");
-    //     appendScript("../public/assets/admin/assets/plugins/morrisjs/morris.min.js");
-    //     appendScript("../public/assets/admin/assets/js/dashboard1.js");
-    // }
+    componentDidMount() {
+        var script = document.createElement('script')
+        script.src = '../../../assets/admin/assets/js/dashboard1.js'
+        script.class = "external-script"
+        document.body.appendChild(script);
+
+        var script = document.createElement('script')
+        script.src = '../../../assets/admin/assets/js/custom.min.js'
+        script.class = "external-script"
+        document.body.appendChild(script);
+    }
 
     render() {
+
+
         return (
+
+
             <div>
                 <div className="fix-header card-no-border">
-                    {/* <div className="preloader">
-                        <svg className="circular" viewBox="25 25 50 50">
-                            <circle className="path" cx={50} cy={50} r={20} fill="none" strokeWidth={2} strokeMiterlimit={10} />
-                        </svg>
-                    </div> */}
                     <div id="main-wrapper">
                         <header className="topbar">
                             <nav className="navbar top-navbar navbar-expand-md navbar-light">
@@ -72,10 +74,10 @@ class AdminIndex extends Component {
                                     <ul id="sidebarnav">
                                         <li className="nav-devider" />
                                         <li>
-                                            <Link replace to="/admin" style={{ backgroundColor: 'transparent' }} className="waves-effect waves-dark" aria-expanded="false"><i className="fa fa-dashboard" /><span className="hide-menu">Dashboard</span></Link>
+                                            <Link to="/admin" style={{ backgroundColor: 'transparent' }} className="waves-effect waves-dark" aria-expanded="false"><i className="fa fa-dashboard" /><span className="hide-menu">Dashboard</span></Link>
                                         </li>
                                         <li>
-                                            <Link replace to="/orders" style={{ backgroundColor: 'transparent' }} className="waves-effect waves-dark" aria-expanded="false"><i className="fa fa-shopping-cart" /><span className="hide-menu">Orders</span></Link>
+                                            <Link to="/orders" style={{ backgroundColor: 'transparent' }} className="waves-effect waves-dark" aria-expanded="false"><i className="fa fa-shopping-cart" /><span className="hide-menu">Orders</span></Link>
                                         </li>
                                     </ul>
                                 </nav>

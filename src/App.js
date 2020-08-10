@@ -6,8 +6,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
+
 
 function App() {
 
@@ -16,10 +18,10 @@ function App() {
 
       <Switch>
         <Route exact path="/">
+
           <Index />
         </Route>
         <Route path="/admin/">
-
           <AdminIndex />
         </Route>
         <Route path="/orders/">

@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
+
+// import { appendScript } from '../../appendScript';
+
 class AdminIndex extends Component {
+
+    // componentDidMount() {
+    //     appendScript("../public/assets/admin/assets/plugins/jquery/jquery.min.js");
+    //     appendScript("../public/assets/admin/assets/plugins/bootstrap/js/popper.min.js");
+    //     appendScript("../public/assets/admin/assets/plugins/bootstrap/js/bootstrap.min.js");
+    //     appendScript("../public/assets/admin/assets/js/waves.js");
+    //     appendScript("../public/assets/admin/assets/js/sidebarmenu.js");
+    //     appendScript("../public/assets/admin/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js");
+    //     appendScript("../public/assets/admin/assets/js/custom.min.js");
+    //     appendScript("../public/assets/admin/assets/plugins/sparkline/jquery.sparkline.min.js");
+    //     appendScript("../public/assets/admin/assets/plugins/raphael/raphael-min.js");
+    //     appendScript("../public/assets/admin/assets/plugins/morrisjs/morris.min.js");
+    //     appendScript("../public/assets/admin/assets/js/dashboard1.js");
+    // }
+
     render() {
         return (
             <div>
@@ -33,7 +51,7 @@ class AdminIndex extends Component {
                                     </ul>
                                     <ul className="navbar-nav my-lg-0">
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
+                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
                                             <div className="dropdown-menu dropdown-menu-right scale-up">
                                                 <ul className="dropdown-user">
                                                     <li role="separator" className="divider" />

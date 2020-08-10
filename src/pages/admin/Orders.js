@@ -33,7 +33,7 @@ class Orders extends Component {
                                     </ul>
                                     <ul className="navbar-nav my-lg-0">
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
+                                            <a className="nav-link dropdown-toggle text-muted waves-effect waves-dark" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/admin/assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
                                             <div className="dropdown-menu dropdown-menu-right scale-up">
                                                 <ul className="dropdown-user">
                                                     <li role="separator" className="divider" />

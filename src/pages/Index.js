@@ -250,7 +250,7 @@ class Index extends Component {
                                                         <i className="fa fa-credit-card" /> Visa Card</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" data-toggle="pill" href="#nav-tab-card">
+                                                    <a className="nav-link" data-toggle="pill" href="#nav-tab-emarican">
                                                         <i className="fa fa-credit-card" /> American Express</a>
                                                 </li>
                                             </ul>
@@ -263,7 +263,7 @@ class Index extends Component {
                                                     <div className="form-group">
                                                         <label htmlFor="cardNumber">Card number</label>
                                                         <div className="input-group">
-                                                            <input type="text" className="form-control" name="cardNumber" placeholder />
+                                                            <input type="number" maxLength={16} className="form-control" name="cardNumber" placeholder />
                                                             <div className="input-group-append">
                                                                 <span className="input-group-text text-muted">
                                                                     <i className="fa fa-cc-visa" />
@@ -287,8 +287,52 @@ class Index extends Component {
                                                         </div>
                                                         <div className="col-sm-4">
                                                             <div className="form-group">
-                                                                <label data-toggle="tooltip" title data-original-title="3 digits code on back side of the card">CVV <i className="fa fa-question-circle" /></label>
-                                                                <input type="number" className="form-control" required />
+                                                                <label data-toggle="tooltip" title data-original-title="3 digits code on back side of the card">CVC <i className="fa fa-question-circle" /></label>
+                                                                <input type="number" maxLength={3} className="form-control" required />
+                                                            </div>
+                                                            {/* form-group.// */}
+                                                        </div>
+                                                    </div>
+                                                    {/* row.// */}
+                                                    <button className="subscribe btn btn-primary btn-block" onClick='alert("Payment Successful")' type="button">
+                                                        Confirm
+                  </button>
+                                                </div>
+                                                {/* tab-pane.// */}
+                                                <div className="tab-pane fade show" id="nav-tab-emarican">
+                                                    <p className="alert alert-success">
+                                                        Some text success or error
+                  </p>
+                                                    {/* form-group.// */}
+                                                    <div className="form-group">
+                                                        <label htmlFor="cardNumber">Card number</label>
+                                                        <div className="input-group">
+                                                            <input type="number" maxLength="15" className="form-control" name="cardNumber" />
+                                                            <div className="input-group-append">
+                                                                <span className="input-group-text text-muted">
+                                                                    <i className="fa fa-cc-visa" />
+                                                                    <i className="fa fa-cc-amex" />
+                                                                    <i className="fa fa-cc-mastercard" />
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* form-group.// */}
+                                                    <div className="row">
+                                                        <div className="col-sm-8">
+                                                            <div className="form-group">
+                                                                <label><span className="hidden-xs">Expiration</span>
+                                                                </label>
+                                                                <div className="input-group">
+                                                                    <input type="number" className="form-control" placeholder="MM" name />
+                                                                    <input type="number" className="form-control" placeholder="YY" name />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-sm-4">
+                                                            <div className="form-group">
+                                                                <label data-toggle="tooltip" title data-original-title="3 digits code on back side of the card">CVC <i className="fa fa-question-circle" /></label>
+                                                                <input type="number" maxLength="4" className="form-control" required />
                                                             </div>
                                                             {/* form-group.// */}
                                                         </div>

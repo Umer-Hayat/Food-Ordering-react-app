@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import useScript from '../../useScript';
 
-// const MyComponent = props => {
-//     useScript('%PUBLIC_URL%/assets/admin/assets/js/dashboard1.js');
-//     // rest of your component
-// }
-
-// import { appendScript } from '../../appendScript';
 
 class AdminIndex extends Component {
 
@@ -24,13 +17,14 @@ class AdminIndex extends Component {
     }
 
     render() {
-
-
         return (
-
-
             <div>
                 <div className="fix-header card-no-border">
+                    <div className="preloader">
+                        <svg className="circular" viewBox="25 25 50 50">
+                            <circle className="path" cx={50} cy={50} r={20} fill="none" strokeWidth={2} strokeMiterlimit={10} />
+                        </svg>
+                    </div>
                     <div id="main-wrapper">
                         <header className="topbar">
                             <nav className="navbar top-navbar navbar-expand-md navbar-light">
@@ -91,7 +85,7 @@ class AdminIndex extends Component {
                             <div className="container-fluid">
                                 <div className="row">
                                     {/* Column */}
-                                    <div className="col-lg-2" />
+                                    {/* <div className="col-lg-2" /> */}
                                     <div className="col-lg-8">
                                         <div className="card">
                                             <div className="card-body">
@@ -99,13 +93,13 @@ class AdminIndex extends Component {
                                                     <div className="col-12">
                                                         <div className="d-flex flex-wrap">
                                                             <div>
-                                                                <h4 className="card-title">Yearly Earning</h4>
+                                                                <h4 className="card-title">Amount($)/Transaction</h4>
                                                             </div>
                                                             <div className="ml-auto">
                                                                 <ul className="list-inline">
                                                                     <li>
                                                                         <h6 className="text-muted text-success">
-                                                                            <i className="fa fa-circle font-10 m-r-10" />Sales
+                                                                            <i className="fa fa-circle font-10 m-r-10" />Amount
                             </h6>
                                                                     </li>
                                                                 </ul>
@@ -120,6 +114,37 @@ class AdminIndex extends Component {
                                         </div>
                                     </div>
                                     {/* Column */}
+                                    <div className="col-lg-4">
+                                        {/* Column */}
+                                        <div className="card card-default">
+                                            <div className="card-header">
+                                                {/* <div className="card-actions">
+                                                    <a className data-action="collapse"><i className="ti-minus" /></a>
+                                                    <a className="btn-minimize" data-action="expand"><i className="mdi mdi-arrow-expand" /></a>
+                                                    <a className="btn-close" data-action="close"><i className="ti-close" /></a>
+                                                </div> */}
+                                                <h4 className="card-title m-b-0">Amount Per Restaurant</h4>
+                                            </div>
+                                            <div className="card-body collapse show">
+                                                <div id="morris-donut-chart" className="ecomm-donute" style={{ height: 317 }} />
+                                                <ul className="list-inline m-t-20 text-center">
+                                                    <li>
+                                                        <h6 className="text-muted"><i className="fa fa-circle text-info" /> Restaurant 1
+                                                    </h6><h4 className="m-b-0">5000</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h6 className="text-muted"><i className="fa fa-circle text-danger" /> Restaurant 2</h6>
+                                                        <h4 className="m-b-0">2000</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h6 className="text-muted"> <i className="fa fa-circle text-success" /> Restaurant 3</h6>
+                                                        <h4 className="m-b-0">3000</h4>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <footer className="footer">
